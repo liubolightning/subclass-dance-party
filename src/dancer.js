@@ -1,18 +1,20 @@
 // Creates and returns a new dancer object that can step
 var Dancer = function(top, left, timeBetweenSteps){
-
+  //debugger;
   this.$node = $('<span class="dancer"></span>');
   this._timeBetweenSteps = timeBetweenSteps;
-  //this._top = top;
-  //this._left = left;
+  //Dancer.prototype.step();
   this.step();
-  console.log('test');
   this.setPosition(top, left);
-}
+  //Dancer.prototype.setPosition(top, left);
+};
 
 Dancer.prototype.step = function(){
   var that = this;
-  setTimeout(that.step, that._timeBetweenSteps);
+
+  setTimeout(function(){
+    that.step();
+  }, this._timeBetweenSteps);
 };
 
 Dancer.prototype.setPosition = function(top, left){
