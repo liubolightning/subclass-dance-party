@@ -10,12 +10,20 @@
     <script src="src/secondDancer.js"></script>
   </head>
   <body>
-    <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">first dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="FirstDancer">second dancer</a>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="SecondDancer">third dancer</a>
+      <div class="topbar">
+        <div class="buttons">
+          <a href="#" id="EasyButton" data-dancer-maker-function-name="BlinkyDancer">Easy Mode</a>
+          <br>
+          <a href="#" id="HardButton" data-dancer-maker-function-name="FirstDancer">Hard Mode</a>
+        </div>
+        <section id ="counter">0</section>
+      </div>
+    <div class="container">
+
+      <img id="panda" src="http://media3.giphy.com/media/Fplv7Nl9XTmW4/200.gif">
+
     </div>
+
     <script src="src/init.js"></script>
   </body>
 </html>

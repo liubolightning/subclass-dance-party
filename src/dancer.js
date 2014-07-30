@@ -1,12 +1,10 @@
 // Creates and returns a new dancer object that can step
 var Dancer = function(top, left, timeBetweenSteps){
   //debugger;
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<img class="dancer" src="http://img4.wikia.nocookie.net/__cb20130308024924/twitterponies/images/6/60/Ninja_Star_Cutie_Mark.png">');
   this._timeBetweenSteps = timeBetweenSteps;
-  //Dancer.prototype.step();
   this.step();
   this.setPosition(top, left);
-  //Dancer.prototype.setPosition(top, left);
 };
 
 Dancer.prototype.step = function(){

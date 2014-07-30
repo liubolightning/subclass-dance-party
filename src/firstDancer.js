@@ -7,5 +7,5 @@ FirstDancer.prototype.constructor = FirstDancer;
 
 FirstDancer.prototype.step = function(){
   Dancer.prototype.step.call(this);
-  this.$node.toggle();
+  //this.$node.toggle();
 };
